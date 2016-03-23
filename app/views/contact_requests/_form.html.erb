@@ -1,0 +1,43 @@
+<%= form_for [@contact_request] do |f| %>
+  <div class="input-field">
+    <%= f.label :purpose %>
+    <%= f.text_field :purpose %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :company %>
+    <%= f.text_field :company %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :role %>
+    <%= f.text_field :role %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :stack %>
+    <%= f.text_field :stack %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :message %>
+    <%= f.text_field :message %>
+  </div>
+
+  <%= f.submit %>
+<% end %>

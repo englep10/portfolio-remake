@@ -1,0 +1,44 @@
+div.wrap {
+  width: auto;
+  margin: 0 auto;
+  align-content: center;
+}
+
+
+div.contactMe-purple {
+  color: black;
+  display: table;
+  border: solid 8px #252839;
+  float: center;
+}
+
+div.contactMe-yellow {
+  color: black;
+  display: table;
+  border: solid 2px #F2B632;
+  margin: auto;
+}
+
+div.contactMe-container {
+  color: black;
+  display: table;
+  padding: 50px;
+  border: solid 8px #252839;
+  margin: auto;
+  background-color: #fff;
+  width: 60em;
+}
+
+html{
+  height: 100%
+}
+
+body {
+  margin: 0;
+  color: #676a6c;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+body.contactMe {
+  background-image: url("contact_me_background.jpg");
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
