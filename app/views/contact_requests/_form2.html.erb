@@ -1,25 +1,16 @@
 <%= form_for [@contact_request] do |f| %>
 
 
-  <span class="first-panel">
-    <p>
-      <input class="with-gap" name="group1" type="radio" id="test1"/>
-      <label for="test1" class="white-text first-panel">Full Time Employer</label>
-      <input class="with-gap" name="group1" type="radio" id="test2"/>
-      <label for="test2" class="white-text first-panel">Freelance Opportunity</label>
-    </p>
-    <p>
-      <input class="with-gap" name="group1" type="radio" id="test3"/>
-      <label for="test3" class="white-text first-panel">Recruiter</label>
-      <input class="with-gap" name="group1" type="radio" id="test4"/>
-      <label for="test4" class="white-text first-panel">Friend</label>
-    </p>
-    <div class="input-field">
-      <%= f.label :purpose, :class => "purpose" %>
-      <%= f.text_field :purpose, :class => "purpose"%>
+  <div class="first-question">
+    <div class="top_row">
+      <a class="waves-effect waves-light btn-large">Full Time Employer</a>
+      <a class="waves-effect waves-light btn-large">Freelance Opportunity</a>
     </div>
-    <input type="date" class="datepicker" placeholder="Pick a day to talk.">
-  </span>
+    <div class="bottom_row">
+      <a class="waves-effect waves-light btn-large">Recruiter</a>
+      <a class="waves-effect waves-light btn-large">Friend</a>
+    </div>
+  </div>
 
   <span class="fte-first-panel">
     <div class="input-field">
@@ -58,10 +49,9 @@
       <%= f.label :message %>
       <%= f.text_field :message %>
     </div>
-    
+
     <input type="date" class="datepicker" placeholder="Pick a day to talk.">
 
   </span>
 
-  <%= f.submit %>
 <% end %>

@@ -1,0 +1,132 @@
+html{
+  height: 100%
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+
+body.contactMe {
+  background-image: url("contact_me_background.jpg");
+}
+
+div.first_question {
+  position: absolute;
+  margin: auto;
+  align-items: center;
+
+}
+
+/* label color */
+ div.input-field label {
+   color: #fff;
+ }
+ /* label focus color */
+ div.input-field input[type=text]:focus + label {
+   color: #F2B632;
+ }
+ /* label underline focus color */
+ div.input-field input[type=text]:focus {
+   border-bottom: 1px solid #F2B632;
+   box-shadow: 0 1px 0 0 #F2B632;
+ }
+ /* valid color */
+ div.input-field input[type=text].valid {
+   border-bottom: 1px solid #000;
+   box-shadow: 0 1px 0 0 #000;
+ }
+ /* invalid color */
+ div.input-field input[type=text].invalid {
+   border-bottom: 1px solid #000;
+   box-shadow: 0 1px 0 0 #000;
+ }
+ /* icon prefix focus color */
+ div.input-field .prefix.active {
+   color: #000;
+ }
+
+ div.picker__weekday-display {
+   background-color: #677077;
+ }
+ div.picker__date-display{
+   background-color: #B5B5B7;
+ }
+
+  div.picker__year-display {
+    color: #fff;
+  }
+
+  div.picker__day--selected, div.picker__day--selected:hover, div.picker--focused div.picker__day--selected {
+    background-color: #252839;
+  }
+
+  button.picker__close {
+    color: #252839;
+  }
+
+  button.picker__today {
+    color: #252839;
+  }
+
+  div.picker__day.picker__day--today {
+    color: #252839;
+  }
+
+  div.picker__nav--next:hover {
+    background-color: #F2B632;
+  }
+
+  div.picker__nav--prev:hover {
+    background-color: #F2B632;
+  }
+
+  div.input-field label.active {
+    color: #F2B632;
+  }
+
+  .btn-large {
+    width: 20em;
+    margin: 1em;
+    position:relative;
+  }
+
+  a.btn, a.btn-large {
+    background-color: #252839;
+  }
+
+  a.btn:hover, a.btn-large:hover{
+    background-color: #41455A;
+  }
+
+  div.top_row{
+    padding-top: 10%;
+    position:relative;
+    float: center;
+    align-items: center;
+    text-align:center;
+  }
+
+  div.bottom_row {
+    position:relative;
+    float: center;
+    text-align:center;
+  }
+
+  div.nav-wrapper {
+    background-color: #fff;
+  }
+
+  a.nav-link {
+    color: #252839;
+  }
+
+  a.nav-link:hover {
+    border-bottom: 5px solid #252839;
+  }
+
+  nav a.brand-logo {
+    color: #252839;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+
+  }
