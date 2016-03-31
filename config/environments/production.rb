@@ -80,4 +80,8 @@ Rails.application.configure do
   #heroku secret_key_base
   config.secret_key_base = ENV["SECRET_KEY_BASE"]
 
+  #static images for heroku
+  config.serve_static_assets = true
+  config.assets.compile = true
+
 end
