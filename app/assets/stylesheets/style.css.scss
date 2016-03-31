@@ -15,10 +15,9 @@ div.first_question {
   position: absolute;
   margin: auto;
   align-items: center;
-
 }
 
-/* label color */
+ /* label color */
  div.input-field label {
    color: #fff;
  }
@@ -26,6 +25,7 @@ div.first_question {
  div.input-field input[type=text]:focus + label {
    color: #F2B632;
  }
+
  /* label underline focus color */
  div.input-field input[type=text]:focus {
    border-bottom: 1px solid #F2B632;
@@ -127,6 +127,9 @@ div.first_question {
 
   nav a.brand-logo {
     color: #252839;
-    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
 
+  .hamburger {
+    color: #252839;
   }

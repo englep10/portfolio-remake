@@ -6,20 +6,14 @@ $(document).ready(function() {
 
   $( ".purpose" ).hide(0);
 
-  $(document).on('click', '.first-panel', function(){
-    console.log("click is working")
+  $(document).on('click', '#FTE', function(){
+    console.log("click is working FTE")
     console.log($(this))
     $('.purpose').val('');
     var val = $(this).text();
     console.log(val);
     var input = $( ".purpose" );
     input.val( input.val() + val );
-
-    if (val == ("Full Time Employer")) {
-      console.log("FTE is working")
-      $( ".fte-first-panel" ).show(0);
-
-    }
 
   });
 
