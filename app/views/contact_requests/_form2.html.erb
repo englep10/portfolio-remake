@@ -10,27 +10,38 @@
       <a class="waves-effect waves-light btn-large" id="REC">Recruiter</a>
       <a class="waves-effect waves-light btn-large" id="FRI">Friend</a>
     </div>
+    <%= f.hidden_field :purpose, :class => "purpose"%>
   </div>
 
   <span class="fte-first-panel">
-    <div class="input-field">
-      <%= f.label :name %>
-      <%= f.text_field :name %>
-    </div>
+    <div class="center-card">
+      <div class="col s12">
+        <div class="card darken-3 fte-card">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+          </div>
 
-    <div class="input-field">
-      <%= f.label :company %>
-      <%= f.text_field :company %>
-    </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">business</i>
+            <%= f.label :company %>
+            <%= f.text_field :company %>
+          </div>
 
-    <div class="input-field">
-      <%= f.label :phone %>
-      <%= f.text_field :phone %>
-    </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">phone</i>
+            <%= f.label :phone %>
+            <%= f.text_field :phone %>
+          </div>
 
-    <div class="input-field">
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+          </div>
+        </div>
+      </div>
     </div>
   </span>
 

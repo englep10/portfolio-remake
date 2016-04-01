@@ -123,6 +123,7 @@ div.first_question {
 
   a.nav-link:hover {
     border-bottom: 5px solid #252839;
+    margin-bottom:-5px;
   }
 
   nav a.brand-logo {
@@ -132,4 +133,31 @@ div.first_question {
 
   .hamburger {
     color: #252839;
+  }
+
+  .fte-first-panel {
+    padding-top: 7%;
+    display: flex;
+  }
+
+  div.fte-card {
+    margin: 0 auto;
+    background-color: #252839;
+  }
+
+  div.center-card{
+    margin: 0 auto;
+    width: auto;
+  }
+
+  i.material-icons {
+    padding-top: 7px;
+  }
+
+  i.material-icons.prefix.active {
+    color: #F2B632;
+  }
+
+  a.fte-next {
+    margin: 0 auto;
   }
