@@ -138,6 +138,13 @@ div.first_question {
   .fte-first-panel {
     padding-top: 7%;
     display: flex;
+    position: relative;
+  }
+
+  .fte-second-panel {
+    padding-top: 7%;
+    display: flex;
+    position: relative;
   }
 
   div.fte-card {
@@ -160,4 +167,25 @@ div.first_question {
 
   a.fte-next {
     margin: 0 auto;
+    position: relative;
+    float: right;
+    margin: 2em;
+  }
+  a.fte-previous {
+    margin: 0 auto;
+    position: relative;
+    float: left;
+    margin: 2em;
+  }
+
+  #previous-fte{
+    padding-top: 0;
+  }
+
+  #next-fte {
+    padding-top: 0;
+  }
+
+  div.next-prev-button {
+    position: relative;
   }

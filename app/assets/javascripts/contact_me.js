@@ -6,6 +6,7 @@ $(document).ready(function() {
 
 
   $(document).on('click', '#FTE', function(){
+    //function for Full Time Employee
     console.log("click is working FTE")
     var val = $(this).attr('id');
     console.log( val );
@@ -17,6 +18,26 @@ $(document).ready(function() {
       console.log("conditional is working")
       $(".first-question").delay(700).fadeOut(1200, "linear", function() {
         $( ".fte-first-panel" ).fadeIn(800);
+        $("#contact_request_name").focus();
+
+        //Previous button Function
+        $(document).on('click', '#previous-fte', function(){
+          $(".fte-first-panel").delay(700).fadeOut(1200, "linear", function() {
+            $( ".first-question" ).fadeIn(800);
+            $('.purpose').val('');
+          });
+        });
+
+
+        $(document).on('click', '#next-fte', function(){
+          $(".fte-first-panel").delay(700).fadeOut(1200, "linear", function() {
+            $( ".fte-second-panel" ).fadeIn(800);
+            $("#contact_request_role").focus();
+          });
+        });
+
+
+
       });
     };
   });

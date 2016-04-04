@@ -13,7 +13,7 @@
     <%= f.hidden_field :purpose, :class => "purpose"%>
   </div>
 
-  <span class="fte-first-panel">
+  <div class="fte-first-panel">
     <div class="center-card">
       <div class="col s12">
         <div class="card darken-3 fte-card">
@@ -42,27 +42,44 @@
           </div>
         </div>
       </div>
+      <div class="next-prev-button">
+        <a class="btn-floating btn-large waves-effect waves-light fte-previous left-align"><i class="material-icons" id="previous-fte">skip_previous</i></a>
+        <a class="btn-floating btn-large waves-effect waves-light fte-next right-align"><i class="material-icons" id="next-fte">skip_next</i></a>
+      </div>
     </div>
-  </span>
+  </div>
 
-  <span class="fte-second-panel">
-    <div class="input-field">
-      <%= f.label :role %>
-      <%= f.text_field :role %>
+  <div class="fte-second-panel">
+    <div class="center-card">
+      <div class="col s12">
+        <div class="card darken-3 fte-card">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">supervisor_account</i>
+            <%= f.label :role %>
+            <%= f.text_field :role %>
+          </div>
+
+          <div class="input-field col s12">
+            <i class="material-icons prefix">settings</i>
+            <%= f.label :stack %>
+            <%= f.text_field :stack %>
+          </div>
+
+          <div class="input-field col s12">
+            <i class="material-icons prefix">forum</i>
+            <%= f.label :message %>
+            <%= f.text_field :message %>
+          </div>
+          <div class="input-field col s12">
+            <input type="date" class="datepicker col s12" placeholder="Pick a day to talk.">
+          </div>
+        </div>
+      </div>
+      <div class="prev-submit">
+        <a class="btn-floating btn-large waves-effect waves-light fte-previous left-align"><i class="material-icons" id="previous-fte">skip_previous</i></a>
+        <a class="btn-floating btn-large waves-effect waves-light fte-next right-align"><i class="material-icons" id="next-fte">skip_next</i></a>
+      </div>
     </div>
-
-    <div class="input-field">
-      <%= f.label :stack %>
-      <%= f.text_field :stack %>
-    </div>
-
-    <div class="input-field">
-      <%= f.label :message %>
-      <%= f.text_field :message %>
-    </div>
-
-    <input type="date" class="datepicker" placeholder="Pick a day to talk.">
-
-  </span>
+  </div>
 
 <% end %>
