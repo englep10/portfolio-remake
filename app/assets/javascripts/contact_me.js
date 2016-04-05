@@ -1,9 +1,16 @@
-$(document).ready(function() {
-  console.log( 'Jquery is working' );
+var ready;
+ready = function() {
 
   $( ".fte-first-panel" ).hide(0);
   $( ".fte-second-panel" ).hide(0);
 
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
+
+$(document).ready(function() {
+  console.log( 'Jquery is working' );
 
   $(document).on('click', '#FTE', function(){
     //function for Full Time Employee
