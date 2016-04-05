@@ -3,7 +3,7 @@
 <head>
   <title>PortfolioEngles</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
   <!-- Compiled and minified CSS -->
@@ -30,10 +30,10 @@
       <li><a href="contact_me" class="nav-link">Contact Me</a></li>
     </ul>
     <ul class="side-nav" id="mobile-demo">
-      <li><a href="https://github.com/englep10/">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/philip-engles-21303866">LinkedIn</a></li>
-      <li><%= "#{link_to 'Resume', asset_path('pe-resume.pdf'), :class => "nav-link", :target => "_blank"}".html_safe %></li>
-      <li><a href="contact_me">Contact Me</a></li>
+      <li><a href="https://github.com/englep10/" class="mobile-nav-link">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/philip-engles-21303866" class="mobile-nav-link">LinkedIn</a></li>
+      <li><%= "#{link_to 'Resume', asset_path('pe-resume.pdf'), :class => "mobile-nav-link", :target => "_blank"}".html_safe %></li>
+      <li><a href="contact_me" class="mobile-nav-link">Contact Me</a></li>
     </ul>
   </div>
 </nav>
